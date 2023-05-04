@@ -1,1 +1,1 @@
-//Dummy file for iDenfySDKWrapper
+//Dummy file
