@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "1.5.8"
+let version = "7.8.1"
 
 let package = Package(
     name: "iDenfyLiveness",
@@ -18,7 +18,7 @@ let package = Package(
             targets: ["iDenfySDKTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", "4.1.3"..<"4.1.4"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", "4.2.0"..<"4.2.1"),
     ],
     targets: [
         //IdenfyViews
