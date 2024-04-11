@@ -29,7 +29,7 @@ let package = Package(
             targets: ["iDenfySDKTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", "4.2.0"..<"4.2.1"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", "4.4.1"..<"4.4.2"),
     ],
     targets: [
         //IdenfyViews
