@@ -18,7 +18,7 @@ enum Checksums {
 
 let package = Package(
     name: "iDenfyLiveness",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "iDenfyLiveness-Dynamic",
@@ -29,7 +29,7 @@ let package = Package(
             targets: ["iDenfySDKTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", "4.4.1"..<"4.4.2"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", "4.4.3"..<"4.4.4"),
     ],
     targets: [
         //IdenfyViews
