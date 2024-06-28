@@ -12,8 +12,6 @@ enum Checksums {
     static let idenfyviewsChecksum = "b52cb78e688be64b08ca00003e6e07fe151d51588b8d877ea3561dbab20540db"
     static let iDenfySDKChecksum = "c00b367d301d4895e331b124b7d436a964e159aa9b569f613987e691ae159703"
     static let idenfycoreChecksum = "cb4ab887cbe9ddac27d1d31eef9985b78a08cb9ec27de5d4925c782278845dd0"
-    static let idenfyNFCReadingChecksum = "65d61f0432e2123f12cecc92f93986f4eb7125e613c4205e55209664bd2e4221"
-    static let openSSLChecksum = "cde50e8c343b06aa58be611d63d09f7731d0d6743554cdd76e4dd13077d8d6f9"
 }
 
 let package = Package(
@@ -53,25 +51,6 @@ let package = Package(
                          condition: .when(platforms: [.iOS])),
             ],
             path: "idenfyviewsWrapper"
-        ),
-        //IdenfyNFCReading
-        .target(
-            name: "idenfyNFCReadingTarget",
-            dependencies: [.target(name: "idenfyNFCReadingWrapper",
-                                   condition: .when(platforms: [.iOS]))],
-            path: "SwiftPM-PlatformExclude/idenfyNFCReadingWrap"
-        ),
-        .target(
-            name: "idenfyNFCReadingWrapper",
-            dependencies: [
-                .target(
-                    name: "idenfyNFCReading",
-                    condition: .when(platforms: [.iOS])
-                ),
-                .target(name: "OpenSSL",
-                        condition: .when(platforms: [.iOS])),
-            ],
-            path: "idenfyNFCReadingWrapper"
         ),
         //IdenfyLiveness
         .target(
@@ -119,8 +98,6 @@ let package = Package(
                         condition: .when(platforms: [.iOS])),
                 .target(name: "iDenfyInternalLogger",
                         condition: .when(platforms: [.iOS])),
-                .target(name: "idenfyNFCReadingTarget",
-                        condition: .when(platforms: [.iOS])),
                 .target(name: "idenfyviewsTarget",
                         condition: .when(platforms: [.iOS])),
                 .target(name: "FaceTecSDK",
@@ -143,9 +120,5 @@ let package = Package(
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/iDenfySDK.zip", checksum: Checksums.iDenfySDKChecksum),
         .binaryTarget(name: "idenfycore",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/idenfycore.zip", checksum: Checksums.idenfycoreChecksum),
-        .binaryTarget(name: "idenfyNFCReading",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/idenfyNFCReading.zip", checksum: Checksums.idenfyNFCReadingChecksum),
-        .binaryTarget(name: "OpenSSL",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/OpenSSL.zip", checksum: Checksums.openSSLChecksum),
     ]
 )
