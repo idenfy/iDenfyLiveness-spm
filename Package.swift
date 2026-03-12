@@ -27,7 +27,7 @@ let package = Package(
             targets: ["iDenfySDKTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", "4.5.0"..<"4.5.1"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.5.0"),
     ],
     targets: [
         //IdenfyViews
