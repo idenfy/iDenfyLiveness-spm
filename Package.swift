@@ -3,15 +3,15 @@
 
 import PackageDescription
 
-let version = "9.0.4"
+let version = "9.1.1"
 
 enum Checksums {
-    static let iDenfyInternalLoggerChecksum = "4cb5543b81dafd68562c5202dd339034aa9d4b8b0fb65744e044b57976c009b1"
-    static let FaceTecSDKChecksum = "2091f9b13d680f57a3fa0353f91ef980c443bf80a51c6385438e903506d3be01"
-    static let iDenfyLivenessChecksum = "84e7b3ceba19cf130c809b59fe484a825e20ed3013ca39f034d062d3bb743a5b"
-    static let idenfyviewsChecksum = "93a92a5f723f6f469575a1667c18b519535b4df5416f8a7548a5366bb06552b3"
-    static let iDenfySDKChecksum = "e00774c54f0ed7b143b2eae5750e36e318a184c544619179b19ac8a0e3f93b5f"
-    static let idenfycoreChecksum = "0fbf918ccd9f0b435ec7ddf33fce98b4485407c384a48884f2d053fa18f36445"
+    static let iDenfyInternalLoggerChecksum = "d45fd79dc199d8c959f588a559a7c5b2b8a8a154af34ad2aacf707c0dbfd5995"
+    static let FaceTecSDKChecksum = "2809c98d6d8fc842da23c6a869cc9de6db9045229af2a3305ff4ef19171f88d2"
+    static let iDenfyLivenessChecksum = "ce241557a611e3efd65b90012c4f2fb80f9091a11fbf021b3f4dd2e05da18f1f"
+    static let idenfyviewsChecksum = "670fca8590cd55ccd99eacf33d15bc35f7d7dcacd56d6c116dbc4ab1885903e5"
+    static let iDenfySDKChecksum = "1d34052de875c37c9034100b7c0c7f31d454ab01636ffb6f712dd85750347561"
+    static let idenfycoreChecksum = "ad5a1fce7808a1fca0b1f2e858e2cd061339722f6e3e122ccc97c323f9515b47"
 }
 
 let package = Package(
