@@ -16,7 +16,7 @@ enum Checksums {
 
 let package = Package(
     name: "iDenfyLiveness",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "iDenfyLiveness-Dynamic",
